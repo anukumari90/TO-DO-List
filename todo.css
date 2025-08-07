@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29a9f9;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.todo{
+    display: flex;
+
+}
+#img{
+    height: 40px;
+    width: 30px;
+    background-size: cover;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    
+    
+}
+
+#inp{
+    height: 40px;
+    width: 55vh;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: 1px solid yellow;
+    padding: 0 20px  ;
+    outline: none;
+}
+#btn{
+    height: 40px;
+    width: 60px;
+    border-radius: 40px;
+    border: none;
+    margin-right: 30px;
+    background-color: rgb(234, 174, 20);
+    font-size: 1rem;
+}
+ ul li{
+    display: flex;
+    list-style: none;
+    position: relative;
+    font-size: 1rem;
+    padding: 10px  8px ;
+    cursor: pointer;
+    position: relative;
+    user-select: none; 
+    padding-left: 10px;
+}
+ul li::before{
+    content: "";
+    background-image: url("uncheck.webp");
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    color: black;
+    display: inline-block;
+    margin-right: 15px;
+}
+ul li.checked {
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("checked.webp");
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    margin-bottom: 10px; 
+}
+
+
+ ul li span{
+    position: absolute;
+    height: 30px;
+    width: 32px;
+    border-radius: 50%;
+    right: 0;
+    color: #555;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(255, 255, 255,0.5);
+    box-shadow: #7f909a;    
+}
+
+ul li span:hover{
+    background-color:rgba(210, 217, 223,0.3);
+}
+ul li input::before {
+    height: 20px;
+    width: 20px;
+    border-radius:50%;
+    
+}
+ 
